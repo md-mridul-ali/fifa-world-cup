@@ -153,3 +153,50 @@
     font-weight: 500;
     color: #FFFFFF;
 }
+/* responsive for large device */
+@media screen and (max-width: 576px) {
+    .container{
+        width: 100%;
+    }
+    .banner{
+        flex-direction: column;
+        text-align: center;
+    }
+    .banner-container{
+        margin-left: 0;
+    }
+    .banner-title{
+        font-size: 45px;
+        line-height: 45px;
+    }
+    .banner-details{
+        width: 100%;
+    }
+    .banner-image{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+    }
+    /* up coming matches */
+    .upcoming-matches{
+          flex-direction: column;
+    }
+    .matches-btn{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: transparent;
+    }
+    .matches-btn .btn:nth-child(1),
+    .matches-btn .btn:nth-child(2){
+    border: 1px solid black;
+}
+    .matches-schedule{
+        flex: 0;
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+}
